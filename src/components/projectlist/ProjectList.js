@@ -5,15 +5,16 @@ function ProjectList() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    fetch("../../db/db.json")
+    const localDB = "http://localhost:3000/projects";
+    fetch(localDB)
       .then((res) => res.json())
-      .then((data) => setProjects(data.projects))
+      .then((projects) => setProjects(projects))
       .catch((err) => console.log(err));
   }, []);
 
   const projectItems = projects.map((project) => (
     <ProjectItem
-      key={projects.id}
+      key={project.id}
       name={project.name}
       about={project.about}
       technologies={project.technologies}

@@ -6,7 +6,7 @@ import About from "../about/About";
 import ProjectList from "../projectlist/ProjectList";
 
 function App() {
-  const [page, setPage] = useState();
+  const [page, setPage] = useState("/");
 
   function getCurrentPage() {
     switch (page) {
@@ -23,7 +23,7 @@ function App() {
   return (
     <div>
       <NavBar onChangePage={setPage} />
-      {getCurrentPage}
+      {getCurrentPage()}
     </div>
   );
 }
