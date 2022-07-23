@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import NavBar from "../navbar/NavBar";
 import Home from "../home/Home";
@@ -8,22 +9,23 @@ import ProjectList from "../projectlist/ProjectList";
 function App() {
   const [page, setPage] = useState("/");
 
-  function getCurrentPage() {
-    switch (page) {
-      case "/":
-        return <Home />;
-      case "/about":
-        return <About />;
-      case "/projects":
-        return <ProjectList />;
-      default:
-        return <h1>404 Not Found</h1>;
-    }
-  }
   return (
     <div>
       <NavBar onChangePage={setPage} />
-      {getCurrentPage()}
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/projects">
+          <ProjectList />
+        </Route>
+        <Route path="*">
+          <h2>404 Page Not Found</h2>
+        </Route>
+      </Switch>
     </div>
   );
 }
