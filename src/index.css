@@ -46,6 +46,11 @@ nav a:active {
   border-bottom: 2px solid tomato;
 }
 
+nav a.active {
+  background: #000;
+  color: #fff;
+}
+
 #home {
   height: 50vh;
   min-height: 400px;
