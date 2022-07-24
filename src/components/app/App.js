@@ -6,6 +6,7 @@ import Home from "../home/Home";
 import About from "../about/About";
 import ProjectList from "../projectlist/ProjectList";
 import ProjectDetail from "../projectdetail/ProjectDetail";
+import NewProject from "../newproject/NewProject";
 
 function App() {
   return (
@@ -21,9 +22,13 @@ function App() {
         <Route exact path="/projects">
           <ProjectList />
         </Route>
-        <Route path="/projects/:id">
+        <Route exact path="/projects/new">
+          <NewProject />
+        </Route>
+        <Route exact path="/projects/:id">
           <ProjectDetail />
         </Route>
+
         <Route path="*">
           <h2>404 Page Not Found</h2>
         </Route>

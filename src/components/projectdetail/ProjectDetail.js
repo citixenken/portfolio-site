@@ -11,7 +11,6 @@ function ProjectDetail() {
   useEffect(() => {
     fetch(`http://localhost:3000/projects/${id}`)
       .then((res) => res.json())
-      //   .then((project) => console.log(project))
       .then((project) => setProject(project))
       .catch((err) => console.log(err));
   }, [id]);

@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  background-color: cornsilk;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -33,6 +34,7 @@ nav {
 nav a {
   display: inline-block;
   margin: 1rem 2rem;
+  padding: 0.25rem;
   text-decoration: none;
   font-size: 1.2em;
   color: firebrick;
@@ -47,7 +49,7 @@ nav a:active {
 }
 
 nav a.active {
-  background: #000;
+  background: tomato;
   color: #fff;
 }
 
@@ -55,6 +57,15 @@ nav a.active {
   height: 50vh;
   min-height: 400px;
   background-color: cornsilk;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
 }
 
 #home,
@@ -101,6 +112,36 @@ nav a.active {
   padding: 0.5rem;
   border-radius: 4px;
   display: inline-block;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+form > input,
+form > textarea,
+form > fieldset {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+form > fieldset {
+  text-align: left;
+  padding: 0.5rem;
+}
+
+form input[type="checkbox"] {
+  margin-right: 0.25rem;
+}
+
+form button {
+  padding: 0.5rem;
+  background-color: firebrick;
+  color: white;
+  font-weight: bold;
+  border: none;
 }
 
 @media (min-width: 700px) {

@@ -4,19 +4,62 @@
       "id": 1,
       "name": "Reciplease",
       "about": "A recipe tracking app",
-      "technologies": ["Rails", "Bootstrap CSS"]
+      "technologies": [
+        "Rails",
+        "Bootstrap CSS"
+      ]
     },
     {
       "id": 2,
       "name": "Kibbles N Bitz",
       "about": "Tinder for dogs",
-      "technologies": ["React", "Redux"]
+      "technologies": [
+        "React",
+        "Redux"
+      ]
     },
     {
       "id": 3,
       "name": "Alienwares",
       "about": "Etsy for aliens",
-      "technologies": ["React", "Redux", "Rails"]
+      "technologies": [
+        "React",
+        "Redux",
+        "Rails"
+      ]
+    },
+    {
+      "name": "Sushi",
+      "about": "qwerty",
+      "technologies": [
+        "React",
+        "Git",
+        "SQL"
+      ],
+      "id": 6
+    },
+    {
+      "name": "The Boys",
+      "about": "Fan-website for everything The Boys!",
+      "technologies": [
+        "TailwindCSS",
+        "Figma",
+        "React",
+        "Ruby",
+        "JavaScript",
+        "Ruby on Rails",
+        "Git",
+        "SQL"
+      ],
+      "id": 7
+    },
+    {
+      "name": "bgf",
+      "about": "dfgdf",
+      "technologies": [
+        "Ruby"
+      ],
+      "id": 8
     }
   ]
 }
