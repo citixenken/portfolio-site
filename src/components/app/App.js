@@ -28,7 +28,6 @@ function App() {
         <Route exact path="/projects/:id">
           <ProjectDetail />
         </Route>
-
         <Route path="*">
           <h2>404 Page Not Found</h2>
         </Route>
